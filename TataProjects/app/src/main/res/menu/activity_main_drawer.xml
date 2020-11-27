@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/comp"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Company Information" />
+        <item
+            android:id="@+id/backup"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Backup and Restore" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+
+
+        <item
+            android:id="@+id/Feedback"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Logout" />
+    </group>
+</menu>

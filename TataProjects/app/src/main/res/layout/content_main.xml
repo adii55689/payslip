@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="88dp"
+        app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_menu_my_calendar"
+        android:paddingTop="20dp"
+        android:text="Attendance"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_popup_sync"
+        android:paddingTop="20dp"
+        android:text="Payment"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_dialog_email"
+        android:paddingTop="20dp"
+        android:text="Payslip"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_input_add"
+        android:paddingTop="20dp"
+        android:text="Employees"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_dialog_info"
+        android:paddingTop="20dp"
+        android:text="Reports"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/ic_input_add"
+        android:paddingTop="20dp"
+        android:text="Backup"
+        android:textColor="#fff"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:capitalize="characters"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Transactions"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="277dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="characters"
+        android:gravity="center_horizontal"
+        android:text="Manage"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="728dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_height="270dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="-5dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
